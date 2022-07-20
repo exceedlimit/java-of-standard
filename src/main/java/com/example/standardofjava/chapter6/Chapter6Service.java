@@ -3,6 +3,7 @@ package com.example.standardofjava.chapter6;
 import com.example.standardofjava.Common;
 import com.example.standardofjava.chapter6.model.BlockTest;
 import com.example.standardofjava.chapter6.model.VariableTest;
+import com.example.standardofjava.chapter6.model.생성자Class;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -109,5 +110,13 @@ public class Chapter6Service {
         BlockTest blockTest = new BlockTest();
     }
 
+
+    public void classTest(){
+        생성자Class classes = new 생성자Class(3L);
+        생성자Class classes1 = new 생성자Class(classes);
+
+
+        Common.println(classes.getA() + "-" + classes.getB());
+    }
 
 }

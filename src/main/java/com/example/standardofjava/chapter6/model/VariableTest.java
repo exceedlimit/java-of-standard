@@ -1,6 +1,7 @@
 package com.example.standardofjava.chapter6.model;
 
 import com.example.standardofjava.Common;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,4 +18,5 @@ public class VariableTest {
     public void setClassValue(int var){
         classValue=var;
     }
+
 }

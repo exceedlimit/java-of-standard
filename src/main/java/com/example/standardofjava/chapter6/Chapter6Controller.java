@@ -37,4 +37,10 @@ public class Chapter6Controller {
         return ApiResult.ok();
     }
 
+    @GetMapping("/class-test")
+    public ApiResult classTest(){
+        chapter6Service.classTest();
+        return ApiResult.ok();
+    }
+
 }

@@ -82,5 +82,9 @@ public class Chapter7Service {
         };
         abstractClasses.stream().forEach(o -> o.print());
 
+        InterfaceTestImpl interfaceTest = new InterfaceTestImpl();
+        interfaceTest.testMemberToString();
+
     }
+
 }
